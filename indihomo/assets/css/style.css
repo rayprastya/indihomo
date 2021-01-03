@@ -218,6 +218,19 @@ h1, h2, h3, h4, h5, h6 {
   color: #fff;
 }
 
+.nav-menu .berlangganan a {
+  background: #3498db;
+  color:  #3498db;
+  border-radius: 50px;
+  margin: 0 0 0 30px;
+  padding: 10px 25px;
+}
+
+.nav-menu .berlangganan a:hover {
+  background: #fff;
+  color: #3498db;
+}
+
 .nav-menu .drop-down ul {
   display: block;
   position: absolute;
