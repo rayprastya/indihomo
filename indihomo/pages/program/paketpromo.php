@@ -6,26 +6,28 @@
           <h2>PROMO</h2>
           <p>Temukan Promo dan Penawaran Menarik</p>
         </div>
-
+        <?php 
+                $data = $db->query("SELECT produk.id as id, produk.kode_produk as kode_produk, produk.nama_produk as nama_produk, produk.keterangan as keterangan, produk.harga as harga, produk.telepon as telepon, produk.internet as internet, produk.paket as paket, tv_paket.nama_tvpaket as tv FROM (
+                    produk INNER JOIN tv_paket ON produk.tv = tv_paket.id_tvpaket )");
+                while($row = $data->fetch_assoc()) {
+    ?>
         <div class="row" data-aos="fade-up" data-aos-delay="200">
           <div class="col-lg-12 d-flex justify-content-center">
             <ul id="portfolio-flters">
               <li data-filter="*" class="filter-active">All</li>
-              <li data-filter=".filter-app">Join Promo</li>
-              <li data-filter=".filter-card">Undian</li>
-              <li data-filter=".filter-web">Lainnya</li>
+              <li data-filter=".filter-<?= $row['paket'] ?>"><?= $row['paket'] ?></li>
             </ul>
           </div>
         </div>
 
         <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="400">
 
-          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+          <div class="col-lg-4 col-md-6 portfolio-item filter-<?= $row['paket'] ?>">
             <div class="portfolio-wrap">
               <img src="assets/img/portfolio/portfolio-1.jpg" class="img-fluid" alt="">
               <div class="portfolio-info">
-                <h4>App 1</h4>
-                <p>App</p>
+                <h4><?= $row['nama_produk'] ?></h4>
+                <p><?= $row['kode_produk'] ?></p>
                 <div class="portfolio-links">
                   <a href="assets/img/portfolio/portfolio-1.jpg" data-gall="portfolioGallery" class="venobox" title="App 1"><i class="bx bx-plus"></i></a>
                   <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>

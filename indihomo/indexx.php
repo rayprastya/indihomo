@@ -1,4 +1,6 @@
 <?php 
+      session_start();
+      include "db/db.php";
       include "head.php";
       include "top-header.php";
       include "jumbotron.php";

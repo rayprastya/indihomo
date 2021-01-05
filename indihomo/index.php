@@ -9,14 +9,17 @@
     include $get_api[1] . '/' . $get_api[2] . '.php';
   } else {
     if (!empty($_SESSION['role'])) {
-      include "head.php";
-      include "top-header.php";
-      include "sidebar.php";
-      include "panel.php";
+      include "pages/login/head.php";
+      include "pages/login/top-header.php";
+      include "pages/login/sidebar.php";
+      include "pages/login/panel.php";
 
-      if (empty($_GET['m']) and empty($_GET['s'])) {
-          include "pages/home/utama.php";
-      } else if ($_GET['m'] != "" and $_GET['s'] != "") {
+      if (empty($_GET['m']) and empty($_GET['s']) and ($_SESSION['role'] == 'admin')) {
+          include "pages/homeuser/utama.php";
+      } else if (empty($_GET['m']) and empty($_GET['s']) and ($_SESSION['role'] == 'user')){
+        include "pages/homeuser/utamauser.php";
+      }
+      else if ($_GET['m'] != "" and $_GET['s'] != "") {
         if (file_exists("pages/".$_GET['m']."/".$_GET['s'].".php")) {
           include "pages/".$_GET['m']."/".$_GET['s'].".php";
         } else {
@@ -24,7 +27,7 @@
         }
       }
 
-      include "footer.php";
+      include "pages/login/footer.php";
     } else {
       include "login.php";
     }

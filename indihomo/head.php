@@ -10,7 +10,7 @@
   <meta content="" name="keywords">
 
   <!-- Favicons -->
-  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/logo/ow.png" rel="icon">
   <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
   <!-- Google Fonts -->
@@ -28,4 +28,17 @@
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
 </head>
+<?php
+$servername = "localhost";
+$username = "root";
+$password = "";
+$dbname = "indihome";
+
+$db = new mysqli($servername, $username, $password, $dbname);
+
+if ($db->connect_error) {
+  die("Connection failed: " . $db->connect_error);
+} 
+
+?>
 <body>
