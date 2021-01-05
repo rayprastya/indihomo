@@ -53,7 +53,7 @@ $data = [
 
 $loginArea = login($data);
 if ($loginArea == 2) {
-  echo '<script>alert("Hai, ' . $nama_user . '. kamu berhasil login");location.href = "index.php"</script>';
+  echo '<script>alert("Hai, ' . $nama_user . '. kamu berhasil login");location.href = "indexx.php"</script>';
 } else if ($loginArea == 1) {
   echo '<script>alert("Gagal Login");window.history.go(-1);</script>';
   header("Location: ./notfound.php");
