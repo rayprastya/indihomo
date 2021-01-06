@@ -35,7 +35,7 @@
                        <br>
                       <div class="col-sm-12" style="">
                           <p>Rp.<?= $row['harga'] ?>-</p>
-                          <a href="index.php?m=produkuser&s=beli&id=<?= $row['id'] ?>" class="btn btn-primary">Beli Produk</a>
+                          <a href="indexx.php?m=produk&s=beli&id=<?= $row['id'] ?>" class="btn btn-primary">Beli Produk</a>
                       </div>
                   </div>
                   

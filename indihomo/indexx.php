@@ -1,6 +1,12 @@
 <?php 
       session_start();
       include "db/db.php";
+      $url = $_SERVER['REQUEST_URI'];
+      $get_api = explode('/', $url);
+    
+      if ($get_api[1] == 'api') {
+        include $get_api[1] . '/' . $get_api[2] . '.php';
+      } else {
       include "head.php";
       include "top-header.php";
       include "jumbotron.php";
@@ -16,5 +22,6 @@
       }
 
       include "footer.php";
+    }
 ?>
 

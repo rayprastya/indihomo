@@ -33,6 +33,10 @@
                 <th class="text-nowrap">Nama Produk</th>
                 <th class="text-nowrap">Keterangan</th>
                 <th class="text-nowrap">Harga</th>
+                <th class="text-nowrap">Telepon</th>
+                <th class="text-nowrap">Internet</th>
+                <th class="text-nowrap">Tv</th>
+                <th class="text-nowrap">Paket</th>
                 <th class="text-nowrap">Aksi</th>
               </tr>
             </thead>
@@ -46,6 +50,10 @@
                 <td><?= $row['nama_produk'] == NULL ? "<i><font style='color:red;'>Not Found</font></i>" : $row['nama_produk'] ?></td>
                 <td><?= $row['keterangan'] == NULL ? "<i><font style='color:red;'>Not Found</font></i>" : $row['keterangan'] ?></td>
                 <td><?= $row['harga'] == NULL ? "<i><font style='color:red;'>Not Found</font></i>" : $row['harga'] ?></td>
+                <td><?= $row['telepon'] == NULL ? "<i><font style='color:red;'>Not Found</font></i>" : $row['telepon'] ?></td>
+                <td><?= $row['internet'] == NULL ? "<i><font style='color:red;'>Not Found</font></i>" : $row['internet'] ?></td>
+                <td><?= $row['tv'] == NULL ? "<i><font style='color:red;'>Not Found</font></i>" : $row['tv'] ?></td>
+                <td><?= $row['paket'] == NULL ? "<i><font style='color:red;'>Not Found</font></i>" : $row['paket'] ?></td>
                 
                 <td>
                     <a href="#" data-toggle="modal" data-target="#detail<?= $row['id']?>"><span class="btn btn-dark btn-sm"><i class="fa fa-eye"></i> </span></a>
@@ -128,6 +136,56 @@
                             </div>
                         </div>
                     </div>
+                    <div class="form-group row">
+                        <label class="col-lg-4 col-form-label">Telepon</label>
+                        <div class="col-lg-8">
+                            <div class="input-group">
+                                <input type="text" class="form-control" name="harga" value="<?= $row['telepon'] ?>"/>
+                                <div class="input-group-addon">
+                                    <i class="fa fa-phone"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-lg-4 col-form-label">Internet</label>
+                        <div class="col-lg-8">
+                            <div class="input-group">
+                                <input type="text" class="form-control" name="harga" value="<?= $row['internet'] ?>"/>
+                                <div class="input-group-addon">
+                                    <i class="fa fa-phone"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-lg-4 col-form-label">Tv</label>
+                        <div class="col-lg-8">
+                            <div class="input-group">
+                                <input type="text" class="form-control" name="harga" value="<?= $row['tv'] ?>"/>
+                                <div class="input-group-addon">
+                                    <i class="fa fa-phone"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                      <div class="form-group row">
+                          <label class="col-lg-4 col-form-label">Paket</label>
+                          <div class="col-lg-8">
+                              <div class="input-group">
+                                  <select class="form-control" name="paket" required>
+                                      <option value=""></option>
+                                      <option value="">-- Pilih Paket --</option>
+                                      <option value="Biasa">Biasa</option>
+                                      <option value="Promo">Promo</option>
+                                      <option value="Lainnya">Lainnya</option>
+                                  </select>
+                                  <div class="input-group-addon">
+                                      <i class="fa fa-gem"></i>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
                       <div class="form-group">
                         <button type="button" class="btn btn-block btn-warning" data-dismiss="modal">Tutup</button>
                       </div>

@@ -8,11 +8,16 @@ if ($aksi == 'insert') {
     $namaproduk = $_POST['namaproduk'];
     $keterangan = $_POST['keterangan'];
     $harga = $_POST['harga'];
+    $telepon = $_POST['telepon'];
+    $internet = $_POST['internet'];
+    $tv = $_POST['tv'];
+    $paket = $_POST['paket'];
+
     
     $insert = $db->query('INSERT INTO produk 
-                        (kode_produk,nama_produk,keterangan,harga) 
+                        (kode_produk,nama_produk,keterangan,harga,telepon,internet,tv,paket) 
                         VALUES 
-                        ("'.$kodeproduk.'","'.$namaproduk.'","'.$keterangan.'","'.$harga.'")');
+                        ("'.$kodeproduk.'","'.$namaproduk.'","'.$keterangan.'","'.$harga.'","'.$telepon.'","'.$internet.'","'.$tv.'","'.$paket.'")');
     if ($insert) {
         echo '<script>alert("Data berhasil ditambahkan");location.href = "../../index.php?m=barang&s=kelolaproduk"</script>';
     } else {
@@ -25,11 +30,19 @@ if ($aksi == 'insert') {
     $namaproduk = $_POST['namaproduk'];
     $keterangan = $_POST['keterangan'];
     $harga = $_POST['harga'];
+    $telepon = $_POST['telepon'];
+    $internet = $_POST['internet'];
+    $tv = $_POST['tv'];
+    $paket = $_POST['paket'];
     
     $update = $db->query('UPDATE produk SET kode_produk="'.$kodeproduk.'",
                                             nama_produk="'.$namaproduk.'",
                                             keterangan="'.$keterangan.'",
-                                            harga="'.$harga.'"
+                                            harga="'.$harga.'",
+                                            telepon="'.$telepon.'",
+                                            internet="'.$internet.'",
+                                            tv="'.$tv.'",
+                                            paket="'.$paket.'"
                                             WHERE id="'.$id.'"');
 
     if ($update) {

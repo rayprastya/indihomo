@@ -25,15 +25,15 @@
             </ul>
           </li>
           <li><a href="indexx.php?m=bantuan&s=bantuan">Bantuan</a></li>
-          <li><a href="#contact">Info</a></li>
           <?php if (empty($_SESSION['role'])){ ?>
           <li class="get-started">
             <a href="#login.php" data-toggle="modal" data-target="#exampleModalCenter">Masuk</a>
           </li>
           <?php } else { ?>
           <?php if ($_SESSION['role'] == 'user'){ ?>
+          <li><a href="indexx.php?m=bantuan&s=info">Info</a></li>
           <li class="get-started">
-            <a href="#about">Berlangganan</a>
+            <a href="indexx.php?m=produk&s=berlangganan">Berlangganan</a>
           </li> 
           <li class="dropdown">
             <a href="#" class="dropdown-toggle" data-toggle="dropdown">

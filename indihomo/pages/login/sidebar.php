@@ -45,6 +45,24 @@
             <li class="<?= !empty($_GET['m']) && $_GET['m'] == 'undian' ? 'active' : '' ?>">
                 <a href="index.php?m=perusahaan&s=perusahaan"><i class="fa fa-chart-pie"></i> <span>Perusahaan</span></a>
             </li>
+            <li class="<?= !empty($_GET['m']) && $_GET['m'] == 'faq' ? 'active' : '' ?>">
+                <a href="index.php?m=faq&s=faq"><i class="fa fa-chart-pie"></i> <span>Faq</span></a>
+            </li>
+            <li class="<?= !empty($_GET['m']) && $_GET['m'] == 'content' ? 'active' : '' ?>">
+                <a href="index.php?m=content&s=content"><i class="fa fa-chart-pie"></i> <span>Content</span></a>
+            </li>
+            <li class="<?= !empty($_GET['m']) && $_GET['m'] == 'myindihome' ? 'active' : '' ?>">
+                <a href="index.php?m=myindihome&s=myindihome"><i class="fa fa-chart-pie"></i> <span>MyIndihome</span></a>
+            </li>
+            <li class="<?= !empty($_GET['m']) && $_GET['m'] == 'tvchanel' ? 'active' : '' ?>">
+                <a href="index.php?m=tvchanel&s=tvchanel"><i class="fa fa-chart-pie"></i> <span>Tv Chanel</span></a>
+            </li>
+            <li class="<?= !empty($_GET['m']) && $_GET['m'] == 'tvpaket' ? 'active' : '' ?>">
+                <a href="index.php?m=tvpaket&s=tvpaket"><i class="fa fa-chart-pie"></i> <span>Tv Paket</span></a>
+            </li>
+            <li class="<?= !empty($_GET['m']) && $_GET['m'] == 'orderan' ? 'active' : '' ?>">
+                <a href="index.php?m=orderan&s=orderan"><i class="fa fa-chart-pie"></i> <span>Orderan</span></a>
+            </li>
             <?php } ?>
              <?php if ($_SESSION['role'] == 'user') { ?>
             <li class="<?= !empty($_GET['m']) && $_GET['m'] == 'produk' ? 'active' : '' ?>">

@@ -3,7 +3,7 @@
     <div id="accordion">
       <div class="section-title" data-aos="fade-up">
           <h2>Question & Answer</h2>
-          <p>Magnam dolores commodi suscipit eius consequatur ex aliquid fug</p>
+          <p>Berikut Merupakan Pertanyaan yang Sering Ditanyakan Pada Kami</p>
       </div>
       <?php 
                 $data = $db->query("SELECT * FROM faq ORDER BY id DESC", 0);

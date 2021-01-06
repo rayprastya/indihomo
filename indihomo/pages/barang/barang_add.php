@@ -15,7 +15,7 @@
         <div class="col-xl-12">
             <div class="panel panel-inverse" data-sortable-id="form-plugins-1">
                 <div class="panel-heading">
-                    <h4 class="panel-title">Isi Data User</h4>
+                    <h4 class="panel-title">Isi Data Produk</h4>
                     <div class="panel-heading-btn">
                         <a href="javascript:;" class="btn btn-xs btn-icon btn-circle btn-default" data-click="panel-expand"><i class="fa fa-expand"></i></a>
                         <a href="javascript:;" class="btn btn-xs btn-icon btn-circle btn-success" data-click="panel-reload"><i class="fa fa-redo"></i></a>
@@ -30,7 +30,7 @@
                             <label class="col-lg-4 col-form-label">Kode Produk</label>
                             <div class="col-lg-8">
                                 <div class="input-group">
-                                    <input type="text" class="form-control" name="kodeproduk" placeholder="Kode Produk" required/>
+                                    <input type="text" class="form-control" name="kodeproduk" placeholder="Kode Produk..." required/>
                                     <div class="input-group-addon">
                                         <i class="fa fa-user-circle"></i>
                                     </div>
@@ -163,6 +163,55 @@
                                     <input type="text" class="form-control" name="harga" placeholder="Harga..." required/>
                                     <div class="input-group-addon">
                                         <i class="fa fa-phone"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label class="col-lg-4 col-form-label">Telepon</label>
+                            <div class="col-lg-8">
+                                <div class="input-group">
+                                    <input type="text" class="form-control" name="telepon" placeholder="Telepon..." required/>
+                                    <div class="input-group-addon">
+                                        <i class="fa fa-phone"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label class="col-lg-4 col-form-label">Internet</label>
+                            <div class="col-lg-8">
+                                <div class="input-group">
+                                    <input type="text" class="form-control" name="internet" placeholder="Internet..." required/>
+                                    <div class="input-group-addon">
+                                        <i class="fa fa-phone"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label class="col-lg-4 col-form-label">Tv</label>
+                            <div class="col-lg-8">
+                                <div class="input-group">
+                                    <input type="text" class="form-control" name="tv" placeholder="Tv group..." required/>
+                                    <div class="input-group-addon">
+                                        <i class="fa fa-phone"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label class="col-lg-4 col-form-label">Paket</label>
+                            <div class="col-lg-8">
+                                <div class="input-group">
+                                    <select class="form-control" name="paket" required>
+                                        <option value="">-- Pilih Paket --</option>
+                                        <option value="Biasa">Biasa</option>
+                                        <option value="Promo">Promo</option>
+                                        <option value="Lainnya">Lainnya</option>
+                                    </select>
+                                    <div class="input-group-addon">
+                                        <i class="fa fa-gem"></i>
                                     </div>
                                 </div>
                             </div>
