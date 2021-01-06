@@ -95,45 +95,7 @@
                                 </div>
                             </div>
                         </div>
-                        <!-- <div class="form-group row">
-                            <label class="col-lg-2 col-form-label">Tempat Lahir</label>
-                            <div class="col-lg-4">
-                                <div class="input-group">
-                                    <input type="text" class="form-control" name="tempat_lahir" placeholder="Tempat Lahir..." required/>
-                                    <div class="input-group-addon">
-                                        <i class="fa fa-map-marker-alt"></i>
-                                    </div>
-                                </div>
-                            </div>
-                            <label class="col-lg-2 col-form-label">Tanggal Lahir</label>
-                            <div class="col-lg-4">
-                                <div class="input-group">
-                                    <input type="date" class="form-control" name="tgl_lahir" placeholder="Tanggal Lahir..." required/>
-                                    <div class="input-group-addon">
-                                        <i class="fa fa-calendar"></i>
-                                    </div>
-                                </div>
-                            </div>
-                        </div> -->
-                        <!-- <div class="form-group row">
-                            <label class="col-lg-4 col-form-label">Agama</label>
-                            <div class="col-lg-8">
-                                <div class="input-group">
-                                    <select class="form-control" name="agama" required>
-                                        <option value="">-- Pilih Agama --</option>
-                                        <option value="Islam">Islam</option>
-                                        <option value="Protestan">Protestan</option>
-                                        <option value="Katolik">Katolik</option>
-                                        <option value="Hindu">Hindu</option>
-                                        <option value="Buddha">Buddha</option>
-                                        <option value="Konghucu">Konghucu</option>
-                                    </select>
-                                    <div class="input-group-addon">
-                                        <i class="fa fa-gem"></i>
-                                    </div>
-                                </div>
-                            </div>
-                        </div> -->
+                        
                         <div class="form-group row">
                             <label class="col-lg-4 col-form-label">Jenis Kelamin</label>
                             <div class="col-lg-8">
@@ -149,53 +111,7 @@
                                 </div>
                             </div>
                         </div>
-                        <!-- <div class="form-group row">
-                            <label class="col-lg-4 col-form-label">Status Pernikahan</label>
-                            <div class="col-lg-8">
-                                <div class="input-group">
-                                    <select class="form-control" name="status_pernikahan" required>
-                                        <option value="">-- Pilih Status Pernikahan --</option>
-                                        <option value="Belum Menikah">Belum Menikah</option>
-                                        <option value="Menikah">Menikah</option>
-                                        <option value="Cerai Hidup">Cerai Hidup</option>
-                                        <option value="Cerai Mati">Cerai Mati</option>
-                                    </select>
-                                    <div class="input-group-addon">
-                                        <i class="fa fa-adjust"></i>
-                                    </div>
-                                </div>
-                            </div>
-                        </div> -->
-                        <!-- <div class="form-group row">
-                            <label class="col-lg-4 col-form-label">Status Pegawai</label>
-                            <div class="col-lg-8">
-                                <div class="input-group">
-                                    <select class="form-control" name="status_pegawai" required>
-                                        <option value="">-- Pilih Status Pegawai --</option>
-                                        <option value="Aktif">Aktif</option>
-                                        <option value="Tidak Aktif">Tidak Aktif</option>
-                                        <option value="Cuti">Cuti</option>
-                                        <option value="Mengundurkan Diri">Mengundurkan Diri</option>
-                                        <option value="Dikeluarkan">Dikeluarkan</option>
-                                        <option value="Lainnya">Lainnya</option>
-                                    </select>
-                                    <div class="input-group-addon">
-                                        <i class="fa fa-clipboard"></i>
-                                    </div>
-                                </div>
-                            </div>
-                        </div> -->
-                        <!-- <div class="form-group row">
-                            <label class="col-lg-4 col-form-label">Jabatan</label>
-                            <div class="col-lg-8">
-                                <div class="input-group">
-                                    <input type="text" class="form-control" name="jabatan" placeholder="Jabatan..." required/>
-                                    <div class="input-group-addon">
-                                        <i class="fa fa-industry"></i>
-                                    </div>
-                                </div>
-                            </div>
-                        </div> -->
+                       
                         <div class="form-group row">
                             <label class="col-lg-4 col-form-label">E-Mail</label>
                             <div class="col-lg-8">
@@ -207,17 +123,7 @@
                                 </div>
                             </div>
                         </div>
-                        <!-- <div class="form-group row">
-                            <label class="col-lg-4 col-form-label">Alamat</label>
-                            <div class="col-lg-8">
-                                <div class="input-group">
-                                    <textarea type="text" class="form-control" name="alamat" placeholder="Alamat Tinggal..." required></textarea>
-                                    <div class="input-group-addon">
-                                        <i class="fas fa-map-marker-alt"></i>
-                                    </div>
-                                </div>
-                            </div>
-                        </div> -->
+                       
                         <div class="form-group row">
                             <label class="col-lg-4 col-form-label">Nomor Telepon</label>
                             <div class="col-lg-8">
@@ -229,22 +135,6 @@
                                 </div>
                             </div>
                         </div>
-                        <!-- <div class="form-group row">
-                            <label class="col-lg-4 col-form-label">Hak Akses</label>
-                            <div class="col-lg-8">
-                                <div class="input-group">
-                                    <select class="form-control" name="role" required>
-                                        <option value="">-- Pilih Hak Akses --</option>
-                                        <option value="admin">Admin</option>
-                                        <option value="user">User</option>
-                                    </select>
-                                    <div class="input-group-addon">
-                                        <i class="fa fa-puzzle-piece"></i>
-                                    </div>
-                                </div>
-                            </div>
-                        </div> -->
-                        <!-- <input type="hidden" id="role" name="role" value="user"> -->
                         <div class="form-group row">
                             <div class="col-sm-12">
                                 <div class="form-group">

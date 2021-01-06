@@ -37,7 +37,7 @@ if ($aksi == 'insert') {
                         VALUES 
                         ("'.$username.'","'.$password.'","'.$nama_lengkap.'","'.$jenis_kelamin.'","'.$email.'","'.$telepon.'","user")');
     if ($daftar) {
-        echo '<script>alert("Data berhasil ditambahkan");location.href = "../../login.php"</script>';
+        echo '<script>alert("Data berhasil ditambahkan");location.href = "../../indexx.php"</script>';
     } else {
         echo '<script>alert("Data gagal ditambahkan");history.go(-1)</script>';
     } 

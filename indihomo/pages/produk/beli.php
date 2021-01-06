@@ -2,7 +2,7 @@
 $data = $db->query('SELECT * FROM produk WHERE id="'.$_GET['id'].'"');
 $row = $data->fetch_assoc()
 ?>
-<div id="content" class="content">
+<div id="content" class="content container">
     
     <div class="row">
         <div class="col-xl-12">
@@ -83,7 +83,26 @@ $row = $data->fetch_assoc()
                             </div>   
                         </div>
                     </form>
-                    <a href="indexx.php?m=produk&s=invoice&id=<?= $row['id'] ?>" class="btn btn-primary">Cetak Invoice</a>
+                    <!--  -->
+                    <form type="hidden" class="form-horizontal form-bordered" action="pages/produk/invoice.php" method="POST">
+                        <input type="hidden" name="iduser" value="<?php echo $_SESSION['id_user'];?>">
+                        <input type="hidden" name="user" value="<?php echo $_SESSION['nama_user'];?>">
+                        <input type="hidden" name="email" value="<?php echo $_SESSION['email_user'];?>">
+                        <input type="hidden" name="nomorhp" value="<?php echo $_SESSION['nomorhp_user'];?>">
+                        <input type="hidden" name="hari" value="<?php echo date('Y/m/d') ?>">
+                        <input type="hidden" name="harga" value="<?= $row['harga'] ?>">
+                        <input type="hidden" name="keterangan" value="<?= $row['keterangan'] ?>">
+                        <input type="hidden" name="namaproduk" value="<?= $row['nama_produk'] ?>">
+                        <input type="hidden" name="kodeproduk" value="<?= $row['kode_produk'] ?>">
+                        <div class="form-group row">
+                            <div class="col-sm-12">
+                                <div class="form-group">
+                                    <button type="submit" class="btn btn-block btn-primary">Cetak Invoice</button>
+                                </div>
+                            </div>   
+                        </div>
+                    </form>
+                    <!--  -->
                 </div>
             </div>
         </div>

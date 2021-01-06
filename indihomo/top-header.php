@@ -3,7 +3,7 @@
     <div class="container d-flex align-items-center">
 
       <div class="logo mr-auto">
-        <h1 class="text-light"><a href="index.html"><span>Indihome</span></a></h1>
+        <h1 class="text-light"><a href="indexx.php"><span>Indihome</span></a></h1>
         <!-- Uncomment below if you prefer to use an image logo -->
         <!-- <a href="index.html"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
       </div>
@@ -70,44 +70,150 @@
   </header><!-- End Header -->
 
   <!-- Modal -->
-  <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-              <div class="modal-dialog modal-dialog-centered" role="document">
-                <div class="modal-content">
-                  <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLongTitle">Login Indihome</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                      <span aria-hidden="true">&times;</span>
-                    </button>
-                  </div>
-                  <div class="modal-body">
-                    <!--  -->
-                            <div class="login-body">
+  <!-- Modal Login -->
+<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+          <div class="modal-content" style="border-radius:25px; width:450px; height:370px;">
+                <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLongTitle">Login Indihome</h5>
+              <button type="button " class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+<!-- Modal Content -->
+        <div class="login-body">
           <div class="login-content">
-            <form action="logedin.php" method="POST" class="margin-bottom-0">
+            <form action="logedin.php" method="POST" class="margin-bottom-0" style="padding:20px;">
               <div class="form-group m-b-20">
                 <input type="text" class="form-control form-control-lg inverse-mode" name="username" placeholder="username" required />
               </div>
-              <div class="form-group m-b-20">
-                <input type="password" class="form-control form-control-lg inverse-mode" name="password" placeholder="Password" required />
-              </div>
-              <div class="checkbox checkbox-css m-b-20">
-                <input type="checkbox" id="remember_checkbox" /> 
-                <label for="remember_checkbox">
-                Remember Me
-                </label>
-              </div>
-              <div class="login-buttons">
-                <button type="submit" class="btn btn-success btn-block btn-lg">Login</button>
-                <br>
-                <h4><a href="daftar.php">Register</a></h4>
-              </div>
-            </form>
-          </div>
-        </div>
-                    <!--  -->
-                  </div>
-                  </form>
+                  <div class="form-group m-b-20">
+                  <input type="password" class="form-control form-control-lg inverse-mode" name="password" placeholder="Password" required />
                 </div>
-              </div>
+                <div class="login-buttons">
+                  <button type="submit" class="btn btn-success btn-block btn-lg"><h5>Login</h5></button>
+                  <br>
+                  <font face="Times New Roman" size="3">
+                    Belum punya akun?  
+                    <a href="javascript:;" data-toggle="modal" data-dismiss="modal" data-target="#register" style="color:red;">Register disini</a>
+                  </font>
+                </div>
+              </form>
             </div>
-          <!-- end modal -->
+          </div>
+<!-- Modal Content  -->
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+<!-- Modal Login -->
+<!-- Modal Register  -->
+<div class="modal fade" id="register" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+          <div class="modal-content" style="border-radius:10px;">
+                <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLongTitle">Register</h5>
+              <button type="button " class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+<!-- Modal Content -->
+        <div class="login-body">
+          <div class="login-content">
+            <form class="form-horizontal form-bordered" action="pages/user/user_proses.php?aksi=daftar" method="POST">
+                        <font size="2" face="Times New Roman">
+                        <div class="form-group row">
+                            <label class="col-lg-4 col-form-label">Username</label>
+                            <div class="col-lg-8">
+                                <div class="input-group">
+                                    <input type="text" class="form-control" name="username" placeholder="Nama User..." required/>
+                                    <div class="input-group-addon">
+                                        <i class="fa fa-user-circle"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label class="col-lg-4 col-form-label">Nama Lengkap</label>
+                            <div class="col-lg-8">
+                                <div class="input-group">
+                                    <input type="text" class="form-control" name="nama_user" placeholder="Nama Lengkap..." required/>
+                                    <div class="input-group-addon">
+                                        <i class="fa fa-user-circle"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label class="col-lg-4 col-form-label">Password</label>
+                            <div class="col-lg-8">
+                                <div class="input-group">
+                                    <input type="password" class="form-control" name="password" placeholder="password..." required/>
+                                    <div class="input-group-addon">
+                                        <i class="fa fa-user-circle"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group row">
+                            <label class="col-lg-4 col-form-label">Jenis Kelamin</label>
+                            <div class="col-lg-8">
+                                <div class="input-group">
+                                    <select class="form-control" name="jk_user" required>
+                                        <option value="">-- Pilih Jenis Kelamin --</option>
+                                        <option value="Pria">Pria</option>
+                                        <option value="Wanita">Wanita</option>
+                                    </select>
+                                    <div class="input-group-addon">
+                                        <i class="fa fa-mercury"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                       
+                        <div class="form-group row">
+                            <label class="col-lg-4 col-form-label">E-Mail</label>
+                            <div class="col-lg-8">
+                                <div class="input-group">
+                                    <input type="email" class="form-control" name="email_user" placeholder="E-Mail..." required/>
+                                    <div class="input-group-addon">
+                                        <i class="fa fa-at"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                       
+                        <div class="form-group row">
+                            <label class="col-lg-4 col-form-label">Nomor Telepon</label>
+                            <div class="col-lg-8">
+                                <div class="input-group">
+                                    <input type="text" class="form-control" name="nomorhp_user" placeholder="Nomor Telepon..." required/>
+                                    <div class="input-group-addon">
+                                        <i class="fa fa-phone"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <div class="col-sm-12">
+                                <div class="form-group">
+                                    <button type="submit" class="btn btn-block btn-primary">Simpan Data</button>
+                                </div>
+                            </div>   
+                        </div>
+                      </font>
+                    </form>
+            </div>
+          </div>
+<!-- Modal Content  -->
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+<!-- Modal Register  -->
+<!-- end modal -->

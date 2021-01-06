@@ -1,4 +1,4 @@
-<!-- ======= Portfolio Section ======= -->
+
 <section id="portfolio" class="portfolio">
       <div class="container">
 
@@ -21,8 +21,27 @@
           </div>
         </div>
 
-        <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="400">
-        <?php while($row = $data->fetch_assoc()) { ?>
+<!-- Card -->
+
+<div class="row portfolio-container" data-aos="fade-up" data-aos-delay="400" style="padding-left:10px; padding-top:10px; padding-bottom:10px;">
+    <?php while($row = $data->fetch_assoc()) { ?>
+  <div class="card-4 portfolio-item filter-<?= $row['paket']?>" style="margin-right:10px;">
+    <div class="portfolio">
+       <img class="card-img-top" src="assets/img/portfolio/biru.png" alt="Card image" style="width:100%">
+      <div class="card-body">
+          <h4 class="card-title"><?= $row['nama_produk']?></h4>
+          <p class="card-text"><?=$row['keterangan']?></p>
+        <div class="portfolio">
+          <a href="indexx.php?m=produk&s=paket" class="btn btn-primary stretched-link">More Details</a>
+        </div>    
+      </div>
+    </div>
+  </div>
+    <?php } ?>
+</div>
+  
+<!-- Card -->
+ <!--   <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="400">
           <div class="col-lg-4 col-md-6 portfolio-item filter-<?= $row['paket']?>">
             <div class="portfolio-wrap">
               <img src="assets/img/portfolio/biru.png" class="img-fluid" alt="">
@@ -35,8 +54,7 @@
               </div>
             </div>
           </div>
-        <?php } ?>
-        </div>
+        </div> -->
 
       </div>
-    </section><!-- End Portfolio Section -->
+    </section>
