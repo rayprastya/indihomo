@@ -1,2 +1,1 @@
-# indihomo
-indhomo parody project
+INDIHOME FINAL
